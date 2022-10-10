@@ -1,0 +1,62 @@
+/* importamos las dos tipos de letras de google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+.titulo {
+    color: white;
+    font-family: 'Homemade Apple', cursive;
+}
+
+
+/* todo llevará el mismo tipo de letra menos la clase titulo que hace referencia a AppName */
+
+div {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding-left: 5%;
+    padding-right: 40%;
+    font-size: 1.5em;
+}
+
+body {
+    background-color: #111419;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.compartir {
+    font-size: 2.5em;
+}
+
+p {
+    color: #d0d0d0;
+}
+
+
+/* Responsive 800px */
+
+@media screen and (max-width: 800px) {
+    div {
+        font-size: 1.2em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+/* Responsive 400px para móbil */
+
+@media screen and (max-width: 400px) {
+    div {
+        font-size: 1em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    button {
+        margin-bottom: 1%;
+    }
+}
